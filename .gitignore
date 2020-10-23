@@ -130,3 +130,5 @@ dmypy.json
 
 fastai2/*
 data/
+activations/
+models/
