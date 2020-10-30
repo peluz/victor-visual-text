@@ -1,0 +1,16 @@
+IMG VALIDATION
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.1163    0.6975    0.1994       314
+agravo_em_recurso_extraordinario     0.0531    0.7826    0.0994      2650
+     despacho_de_admissibilidade     0.0320    0.6721    0.0611       183
+                          outros     0.9797    0.4353    0.6028     91434
+                   peticao_do_RE     0.2347    0.5281    0.3250      6803
+                        sentenca     0.4422    0.6237    0.5175      1613
+
+                        accuracy                         0.4545    102997
+                       macro avg     0.3097    0.6232    0.3009    102997
+                    weighted avg     0.8939    0.4545    0.5680    102997
+                    
+TEXT VALIDATION
