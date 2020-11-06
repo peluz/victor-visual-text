@@ -132,3 +132,4 @@ fastai2/*
 data/
 activations/
 models/
+tmp/
