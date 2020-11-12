@@ -1,16 +1,16 @@
-IMG VALIDATION
+12 Nov. 2020
+
+CNN WITH WEIGHTS VALIDATION
 
                                   precision    recall  f1-score   support
 
-          acordao_de_2_instancia     0.1163    0.6975    0.1994       314
-agravo_em_recurso_extraordinario     0.0531    0.7826    0.0994      2650
-     despacho_de_admissibilidade     0.0320    0.6721    0.0611       183
-                          outros     0.9797    0.4353    0.6028     91434
-                   peticao_do_RE     0.2347    0.5281    0.3250      6803
-                        sentenca     0.4422    0.6237    0.5175      1613
+          acordao_de_2_instancia     0.4346    0.8227    0.5688       299
+agravo_em_recurso_extraordinario     0.4695    0.6705    0.5523      2149
+     despacho_de_admissibilidade     0.3720    0.7541    0.4982       183
+                          outros     0.9755    0.9173    0.9455     84104
+                   peticao_do_RE     0.5561    0.8047    0.6577      6364
+                        sentenca     0.5282    0.7855    0.6316      1636
 
-                        accuracy                         0.4545    102997
-                       macro avg     0.3097    0.6232    0.3009    102997
-                    weighted avg     0.8939    0.4545    0.5680    102997
-                    
-TEXT VALIDATION
+                        accuracy                         0.9013     94735
+                       macro avg     0.5560    0.7925    0.6424     94735
+                    weighted avg     0.9253    0.9013    0.9098     94735
