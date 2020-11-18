@@ -1,5 +1,82 @@
+18 nov. 2019
+IMG WEIGHTS TEST 224
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.1027    0.9053    0.1845       285
+agravo_em_recurso_extraordinario     0.0613    0.7438    0.1133      2537
+     despacho_de_admissibilidade     0.0451    0.6717    0.0844       198
+                          outros     0.9829    0.4498    0.6172     87902
+                   peticao_do_RE     0.2178    0.6472    0.3259      6177
+                        sentenca     0.3036    0.7686    0.4352      1478
+
+                        accuracy                         0.4763     98577
+                       macro avg     0.2856    0.6977    0.2934     98577
+                    weighted avg     0.8967    0.4763    0.5809     98577
+
+BEST FUSION TEST TEXT 
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.8993    0.9158    0.9074       273
+agravo_em_recurso_extraordinario     0.6383    0.5301    0.5792      1841
+     despacho_de_admissibilidade     0.7450    0.5606    0.6398       198
+                          outros     0.9683    0.9766    0.9724     85408
+                   peticao_do_RE     0.7653    0.7444    0.7547      6331
+                        sentenca     0.8866    0.7634    0.8204      1475
+
+                        accuracy                         0.9483     95526
+                       macro avg     0.8171    0.7485    0.7790     95526
+                    weighted avg     0.9465    0.9483    0.9472     95526
+
+
+BEST FUSION TEST IMG
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.9058    0.8772    0.8913       285
+agravo_em_recurso_extraordinario     0.6322    0.5278    0.5753      2537
+     despacho_de_admissibilidade     0.7551    0.5606    0.6435       198
+                          outros     0.9666    0.9753    0.9709     87902
+                   peticao_do_RE     0.7706    0.7593    0.7649      6177
+                        sentenca     0.8957    0.7612    0.8230      1478
+
+                        accuracy                         0.9459     98577
+                       macro avg     0.8210    0.7436    0.7781     98577
+                    weighted avg     0.9441    0.9459    0.9447     98577
+
+
+
+BEST FUSION TEsT (imgs_no_weights)
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.8993    0.8711    0.8850       287
+agravo_em_recurso_extraordinario     0.6224    0.5190    0.5660      2655
+     despacho_de_admissibilidade     0.7450    0.5578    0.6379       199
+                          outros     0.9655    0.9752    0.9703     92533
+                   peticao_do_RE     0.7628    0.7386    0.7505      6386
+                        sentenca     0.8866    0.7492    0.8121      1503
+
+                        accuracy                         0.9446    103563
+                       macro avg     0.8136    0.7352    0.7703    103563
+                    weighted avg     0.9424    0.9446    0.9432    103563
+
+BEST FUSION VALIDATION (imgs no weights)
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.8691    0.7469    0.8034       320
+agravo_em_recurso_extraordinario     0.6668    0.4407    0.5307      2798
+     despacho_de_admissibilidade     0.8788    0.6138    0.7227       189
+                          outros     0.9553    0.9828    0.9689     95602
+                   peticao_do_RE     0.8025    0.6518    0.7193      6987
+                        sentenca     0.9149    0.7032    0.7952      1681
+
+                        accuracy                         0.9415    107577
+                       macro avg     0.8479    0.6898    0.7567    107577
+                    weighted avg     0.9369    0.9415    0.9376    107577
+
+
 17 Nov. 2020
-BEST FUSION TEST TEXT
+BEST FUSION TEST TEXT (imgs no weights)
                                   precision    recall  f1-score   support
 
           acordao_de_2_instancia     0.8917    0.9048    0.8982       273
@@ -14,7 +91,7 @@ agravo_em_recurso_extraordinario     0.6633    0.4997    0.5700      1841
                     weighted avg     0.9476    0.9507    0.9484     95526
 
 
-BEST FUSION TEST IMG
+BEST FUSION TEST IMG (imgs no weights)
                                   precision    recall  f1-score   support
 
           acordao_de_2_instancia     0.8949    0.8667    0.8806       285
@@ -30,7 +107,7 @@ agravo_em_recurso_extraordinario     0.6766    0.4107    0.5112      2537
 
 
 
-BEST FUSION TEsT
+BEST FUSION TEsT (imgs_no_weights)
 
                                   precision    recall  f1-score   support
 
@@ -45,7 +122,7 @@ agravo_em_recurso_extraordinario     0.6648    0.4056    0.5039      2655
                        macro avg     0.8420    0.6983    0.7569    103563
                     weighted avg     0.9421    0.9466    0.9428    103563
 
-BEST FUSION VALIDATION
+BEST FUSION VALIDATION (imgs no weights)
 
                                   precision    recall  f1-score   support
 
