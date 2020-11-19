@@ -1,4 +1,19 @@
-18 nov. 2019
+19 nov. 2020
+HYBRID CLASSIFIER
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.2692    0.8920    0.4136       287
+agravo_em_recurso_extraordinario     0.4408    0.5522    0.4902      2655
+     despacho_de_admissibilidade     0.3543    0.5377    0.4271       199
+                          outros     0.9655    0.9507    0.9580     92533
+                   peticao_do_RE     0.7144    0.7278    0.7211      6386
+                        sentenca     0.7800    0.7053    0.7407      1503
+
+                        accuracy                         0.9222    103563
+                       macro avg     0.5874    0.7276    0.6251    103563
+                    weighted avg     0.9307    0.9222    0.9258    103563
+
+18 nov. 2020
 IMG WEIGHTS TEST 224
                                   precision    recall  f1-score   support
 
@@ -44,7 +59,7 @@ agravo_em_recurso_extraordinario     0.6322    0.5278    0.5753      2537
 
 
 
-BEST FUSION TEsT (imgs_no_weights)
+BEST FUSION TEsT 
 
                                   precision    recall  f1-score   support
 
@@ -59,20 +74,22 @@ agravo_em_recurso_extraordinario     0.6224    0.5190    0.5660      2655
                        macro avg     0.8136    0.7352    0.7703    103563
                     weighted avg     0.9424    0.9446    0.9432    103563
 
-BEST FUSION VALIDATION (imgs no weights)
+BEST FUSION VALIDATION 
+
 
                                   precision    recall  f1-score   support
 
-          acordao_de_2_instancia     0.8691    0.7469    0.8034       320
-agravo_em_recurso_extraordinario     0.6668    0.4407    0.5307      2798
-     despacho_de_admissibilidade     0.8788    0.6138    0.7227       189
-                          outros     0.9553    0.9828    0.9689     95602
-                   peticao_do_RE     0.8025    0.6518    0.7193      6987
-                        sentenca     0.9149    0.7032    0.7952      1681
+          acordao_de_2_instancia     0.8926    0.7531    0.8169       320
+agravo_em_recurso_extraordinario     0.5754    0.5193    0.5459      2798
+     despacho_de_admissibilidade     0.7925    0.6667    0.7241       189
+                          outros     0.9617    0.9730    0.9673     95602
+                   peticao_do_RE     0.7473    0.7013    0.7236      6987
+                        sentenca     0.9004    0.7204    0.8004      1681
 
-                        accuracy                         0.9415    107577
-                       macro avg     0.8479    0.6898    0.7567    107577
-                    weighted avg     0.9369    0.9415    0.9376    107577
+                        accuracy                         0.9384    107577
+                       macro avg     0.8116    0.7223    0.7630    107577
+                    weighted avg     0.9363    0.9384    0.9370    107577
+
 
 
 17 Nov. 2020
