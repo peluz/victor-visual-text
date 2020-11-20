@@ -1,3 +1,19 @@
+20 nov. 2020
+FUsion on text test set with image activations zeroed
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.8977    0.8681    0.8827       273
+agravo_em_recurso_extraordinario     0.7251    0.4313    0.5409      1841
+     despacho_de_admissibilidade     0.7786    0.5152    0.6201       198
+                          outros     0.9572    0.9887    0.9727     85408
+                   peticao_do_RE     0.8776    0.6287    0.7326      6331
+                        sentenca     0.8539    0.7451    0.7958      1475
+
+                        accuracy                         0.9490     95526
+                       macro avg     0.8484    0.6962    0.7574     95526
+                    weighted avg     0.9453    0.9490    0.9447     95526
+
+
 19 nov. 2020
 HYBDRID CLASSIFIER IMAGE NO WEIGHTS ON TEST SET ONLY IMAGES
 
