@@ -1,3 +1,39 @@
+26 nov. 2020
+CRF TEST CLEAN TAGS
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.9385    0.8938    0.9156       273
+agravo_em_recurso_extraordinario     0.7382    0.5160    0.6074      1841
+     despacho_de_admissibilidade     0.7664    0.5303    0.6269       198
+                          outros     0.9634    0.9905    0.9767     85408
+                   peticao_do_RE     0.9000    0.6950    0.7843      6331
+                        sentenca     0.9554    0.7403    0.8342      1475
+
+                        accuracy                         0.9567     95526
+                       macro avg     0.8770    0.7277    0.7909     95526
+                    weighted avg     0.9542    0.9567    0.9538     95526
+
+CRF TEST all tags
+                                    precision    recall  f1-score   support
+
+          B-acordao_de_2_instancia     0.9188    0.9095    0.9141       199
+          I-acordao_de_2_instancia     0.9841    0.8378    0.9051        74
+B-agravo_em_recurso_extraordinario     0.5723    0.4272    0.4892       213
+I-agravo_em_recurso_extraordinario     0.7429    0.5147    0.6081      1628
+     B-despacho_de_admissibilidade     0.7636    0.5714    0.6537       147
+     I-despacho_de_admissibilidade     0.3333    0.1765    0.2308        51
+                          B-outros     0.8857    0.2295    0.3645     25744
+                          I-outros     0.7185    0.9771    0.8281     59664
+                   B-peticao_do_RE     0.8308    0.5353    0.6511       312
+                   I-peticao_do_RE     0.8978    0.6993    0.7862      6019
+                        B-sentenca     0.8060    0.7057    0.7525       265
+                        I-sentenca     0.9693    0.7298    0.8326      1210
+
+                          accuracy                         0.7424     95526
+                         macro avg     0.7853    0.6095    0.6680     95526
+                      weighted avg     0.7792    0.7424    0.6949     95526
+
+
 20 nov. 2020
 FUsion on text test set with image activations zeroed
                                   precision    recall  f1-score   support
