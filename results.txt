@@ -1,5 +1,73 @@
+28 nov. 2020
+LSTM-CEF 256 Test
+
+                                    precision    recall  f1-score   support
+
+          B-acordao_de_2_instancia     0.9188    0.9095    0.9141       199
+B-agravo_em_recurso_extraordinario     0.4624    0.4038    0.4311       213
+     B-despacho_de_admissibilidade     0.7944    0.5782    0.6693       147
+                          B-outros     0.9208    0.3568    0.5143     25744
+                   B-peticao_do_RE     0.6516    0.4615    0.5403       312
+                        B-sentenca     0.7123    0.7849    0.7469       265
+          I-acordao_de_2_instancia     0.9697    0.8649    0.9143        74
+I-agravo_em_recurso_extraordinario     0.6051    0.5676    0.5857      1628
+     I-despacho_de_admissibilidade     0.4091    0.1765    0.2466        51
+                          I-outros     0.7523    0.9594    0.8433     59664
+                   I-peticao_do_RE     0.7880    0.7626    0.7751      6019
+                        I-sentenca     0.9298    0.7777    0.8470      1210
+
+                          accuracy                         0.7711     95526
+                         macro avg     0.7429    0.6336    0.6690     95526
+                      weighted avg     0.7990    0.7711    0.7435     95526
+
+                                    precision    recall  f1-score   support
+
+          B-acordao_de_2_instancia     0.9354    0.9011    0.9179       273
+B-agravo_em_recurso_extraordinario     0.6165    0.5736    0.5943      1841
+     B-despacho_de_admissibilidade     0.7829    0.5101    0.6177       198
+                          B-outros     0.9705    0.9780    0.9742     85408
+                   B-peticao_do_RE     0.7969    0.7610    0.7785      6331
+                        B-sentenca     0.8988    0.7946    0.8435      1475
+
+                          accuracy                         0.9518     95526
+                         macro avg     0.8335    0.7531    0.7877     95526
+                      weighted avg     0.9505    0.9518    0.9510     95526
+
+LSTM-CRF 256 Validation
+                                    precision    recall  f1-score   support
+
+          B-acordao_de_2_instancia     0.8995    0.8905    0.8950       201
+B-agravo_em_recurso_extraordinario     0.5054    0.3924    0.4418       237
+     B-despacho_de_admissibilidade     0.7931    0.6259    0.6996       147
+                          B-outros     0.9307    0.3599    0.5190     25898
+                   B-peticao_do_RE     0.6463    0.4877    0.5559       326
+                        B-sentenca     0.6875    0.7359    0.7109       284
+          I-acordao_de_2_instancia     0.9365    0.6020    0.7329        98
+I-agravo_em_recurso_extraordinario     0.6055    0.5853    0.5952      1912
+     I-despacho_de_admissibilidade     0.7333    0.3056    0.4314        36
+                          I-outros     0.7462    0.9557    0.8380     58206
+                   I-peticao_do_RE     0.7645    0.7743    0.7694      6038
+                        I-sentenca     0.9400    0.7530    0.8361      1352
+
+                          accuracy                         0.7659     94735
+                         macro avg     0.7657    0.6223    0.6688     94735
+                      weighted avg     0.7972    0.7659    0.7388     94735
+
+                                    precision    recall  f1-score   support
+
+          B-acordao_de_2_instancia     0.9275    0.8127    0.8663       299
+B-agravo_em_recurso_extraordinario     0.6211    0.5872    0.6037      2149
+     B-despacho_de_admissibilidade     0.8702    0.6230    0.7261       183
+                          B-outros     0.9690    0.9743    0.9716     84104
+                   B-peticao_do_RE     0.7700    0.7696    0.7698      6364
+                        B-sentenca     0.9056    0.7677    0.8310      1636
+
+                          accuracy                         0.9470     94735
+                         macro avg     0.8439    0.7558    0.7948     94735
+                      weighted avg     0.9463    0.9470    0.9465     94735
+
 27 nov. 2020
-LSTM TEST
+LSTM 128 TEST
                                     precision    recall  f1-score   support
 
           B-acordao_de_2_instancia     0.9143    0.1608    0.2735       199
@@ -32,7 +100,7 @@ agravo_em_recurso_extraordinario     0.6055    0.5470    0.5748      1841
                        macro avg     0.7966    0.7607    0.7779     95526
                     weighted avg     0.9467    0.9476    0.9471     95526
 
-LSTM VALID
+LSTM 128 VALID
                                     precision    recall  f1-score   support
 
           B-acordao_de_2_instancia     0.8571    0.1194    0.2096       201
