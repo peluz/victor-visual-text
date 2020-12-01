@@ -1,3 +1,37 @@
+1 dec. 2020
+LSTM from embs 128 Valid
+                                    precision    recall  f1-score   support
+
+          B-acordao_de_2_instancia     0.9448    0.8507    0.8953       201
+B-agravo_em_recurso_extraordinario     0.6432    0.5781    0.6089       237
+     B-despacho_de_admissibilidade     0.8319    0.6735    0.7444       147
+                          B-outros     0.9410    0.8896    0.9146     25898
+                   B-peticao_do_RE     0.7645    0.6472    0.7010       326
+                        B-sentenca     0.8534    0.6972    0.7674       284
+          I-acordao_de_2_instancia     0.6000    0.6429    0.6207        98
+I-agravo_em_recurso_extraordinario     0.5675    0.6548    0.6081      1912
+     I-despacho_de_admissibilidade     0.4667    0.3889    0.4242        36
+                          I-outros     0.9241    0.9427    0.9333     58206
+                   I-peticao_do_RE     0.7744    0.8100    0.7918      6038
+                        I-sentenca     0.8825    0.7774    0.8266      1352
+
+                          accuracy                         0.9078     94735
+                         macro avg     0.7662    0.7128    0.7364     94735
+                      weighted avg     0.9093    0.9078    0.9081     94735
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.8462    0.8094    0.8274       299
+agravo_em_recurso_extraordinario     0.5808    0.6538    0.6151      2149
+     despacho_de_admissibilidade     0.7852    0.6393    0.7048       183
+                          outros     0.9731    0.9703    0.9717     84104
+                   peticao_do_RE     0.7767    0.8045    0.7904      6364
+                        sentenca     0.8946    0.7781    0.8323      1636
+
+                        accuracy                         0.9476     94735
+                       macro avg     0.8094    0.7759    0.7903     94735
+                    weighted avg     0.9489    0.9476    0.9481     94735
+
 28 nov. 2020
 LSTM-CEF 256 Test
 
