@@ -69,19 +69,3 @@ class My_Pad_Input(ItemTransform):
             if backwards: x1 = x1.flip(0)
             return retain_type(x1, x)
         return [tuple(map(lambda idxx: _f(*idxx), enumerate(s))) for s in samples]
-    
-class SequenceModel(Module):
-    def __init__(self, input_dim, out_dim, hidden_dim=128):
-        self.lstm = torch.nn.LSTM(input_size=input_dim, hidden_size=hidden_dim,
-                                  batch_first=True, bidirectional=True).cuda()
-        self.bn = nn.BatchNorm1d(hidden_dim*2, momentum=0.01).cuda()
-        self.drop = nn.Dropout().cuda()
-        self.lin = nn.Linear(hidden_dim*2, out_dim).cuda()
-        
-    def forward(self, x):
-        out, _ = self.lstm(x)
-        out = out.permute(0, 2, 1)
-        out_norm = self.bn(out)
-        out_drop = self.drop(out_norm)
-        out_drop = out_drop.permute(0, 2, 1)
-        return self.lin(out_drop)
