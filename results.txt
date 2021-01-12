@@ -1,3 +1,19 @@
+12 jan. 2021
+Img No Weights 224 TEST 
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     1.0000    0.0351    0.0678       285
+agravo_em_recurso_extraordinario     0.0000    0.0000    0.0000      2537
+     despacho_de_admissibilidade     0.0000    0.0000    0.0000       198
+                          outros     0.9086    0.9957    0.9502     87902
+                   peticao_do_RE     0.8187    0.2223    0.3496      6177
+                        sentenca     0.9364    0.3288    0.4867      1478
+
+                        accuracy                         0.9069     98577
+                       macro avg     0.6106    0.2637    0.3091     98577
+                    weighted avg     0.8785    0.9069    0.8767     98577
+
 3 dec. 2020
 LSTM-CRF 128 Test
 
