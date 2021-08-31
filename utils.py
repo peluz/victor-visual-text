@@ -69,3 +69,16 @@ class My_Pad_Input(ItemTransform):
             if backwards: x1 = x1.flip(0)
             return retain_type(x1, x)
         return [tuple(map(lambda idxx: _f(*idxx), enumerate(s))) for s in samples]
+    
+class GetImgAndTextEmbs(Transform):
+    def encodes(self, x):    
+        embs = []
+        for act in x["acts"]:
+            img_file = act.replace("text", "img") + ".pt"
+            if Path(img_file).exists(): 
+                img_emb = torch.load(act.replace("text", "img") + ".pt")
+            else:
+                img_emb = torch.zeros([4096])
+            text_emb = tensor(np.load(act + ".npy"))
+            embs.append(torch.cat([img_emb, text_emb]).view(1,-1))
+        return torch.cat(embs)
