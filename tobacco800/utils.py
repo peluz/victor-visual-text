@@ -30,12 +30,28 @@ def evaluate_ensemble(fwd, bwd, fwd_dl, bwd_dl):
     preds = np.argmax(preds, axis=1)
     print(classification_report(targets, preds, target_names=fwd.dl.vocab[-1], digits=4))
     
-def get_sequences(data):
+def get_sequences(data, threshold):
     xs = []
     ys = []
-    for k, v in data.groupby("process_id").groups.items():
-        xs.append(data.iloc[v]["activation_path"].tolist())
-        ys.append(data.iloc[v]["document_type"].tolist())
+    page_counter = 0
+    xs_local = []
+    ys_local = []
+    for index, row in data.iterrows():
+        pages = row['pages']
+        page = row['page']     
+        if page_counter + pages - page + 1 <= threshold:
+            xs_local.append(row["activation_path"])
+            ys_local.append(row["class"])
+        else:
+            xs.append(xs_local)
+            ys.append(ys_local)
+            xs_local = [row["activation_path"]]
+            ys_local = [row["class"]]
+            page_counter = 1
+        page_counter += 1
+#     for k, v in data.groupby("docid").groups.items():
+#         xs.append(data.iloc[v]["activation_path"].tolist())
+#         ys.append(data.iloc[v]["document_type"].tolist())
     return xs, ys
 
 class GetLabels(Transform):
@@ -77,8 +93,11 @@ class GetImgAndTextEmbs(Transform):
         for act in x["acts"]:
             img_file = act.replace("text", "img") + ".pt"
             if Path(img_file).exists(): 
+#                print('found')
                 img_emb = torch.load(act.replace("text", "img") + ".pt")
             else:
+                print('cannot found')
+                print(img_file)
                 img_emb = torch.zeros([4096])
             text_emb = tensor(np.load(act + ".npy"))
             embs.append(torch.cat([img_emb, text_emb]).view(1,-1))
