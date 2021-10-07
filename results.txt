@@ -1,4 +1,64 @@
 5 Out. 2021
+
+late fusion test + image class priors
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.9308    0.8432    0.8848       287
+agravo_em_recurso_extraordinario     0.6203    0.4934    0.5496      2655
+     despacho_de_admissibilidade     0.6632    0.6432    0.6531       199
+                          outros     0.9642    0.9750    0.9696     92533
+                   peticao_do_RE     0.7552    0.7366    0.7458      6386
+                        sentenca     0.9150    0.7305    0.8124      1503
+
+                        accuracy                         0.9434    103563
+                       macro avg     0.8081    0.7370    0.7692    103563
+                    weighted avg     0.9411    0.9434    0.9419    103563
+
+late fusion valid + image class priors
+
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.9160    0.7156    0.8035       320
+agravo_em_recurso_extraordinario     0.6185    0.5250    0.5679      2798
+     despacho_de_admissibilidade     0.6587    0.7249    0.6902       189
+                          outros     0.9605    0.9733    0.9668     95602
+                   peticao_do_RE     0.7387    0.6994    0.7185      6987
+                        sentenca     0.9244    0.6907    0.7906      1681
+
+                        accuracy                         0.9382    107577
+                       macro avg     0.8028    0.7215    0.7563    107577
+                    weighted avg     0.9360    0.9382    0.9366    107577
+
+late fusion test + image uniform
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.2706    0.8920    0.4152       287
+agravo_em_recurso_extraordinario     0.4316    0.6139    0.5068      2655
+     despacho_de_admissibilidade     0.3636    0.6432    0.4646       199
+                          outros     0.9682    0.9461    0.9570     92533
+                   peticao_do_RE     0.7068    0.7369    0.7216      6386
+                        sentenca     0.7831    0.7325    0.7570      1503
+
+                        accuracy                         0.9209    103563
+                       macro avg     0.5873    0.7608    0.6370    103563
+                    weighted avg     0.9325    0.9209    0.9256    103563
+
+
+Late fusion val + image uniform
+                                  precision    recall  f1-score   support
+
+          acordao_de_2_instancia     0.2475    0.7812    0.3759       320
+agravo_em_recurso_extraordinario     0.3589    0.6133    0.4528      2798
+     despacho_de_admissibilidade     0.3333    0.7354    0.4587       189
+                          outros     0.9663    0.9324    0.9490     95602
+                   peticao_do_RE     0.6563    0.7076    0.6810      6987
+                        sentenca     0.7367    0.6924    0.7139      1681
+
+                        accuracy                         0.9050    107577
+                       macro avg     0.5498    0.7437    0.6052    107577
+                    weighted avg     0.9235    0.9050    0.9125    107577
+
 Late fusion + CRF Svic Test
 
                                   precision    recall  f1-score   support
